@@ -290,3 +290,18 @@ header .links li a {
             text-decoration: none;
             transition: color 0.3s;
 }
+
+
+.footer {
+    background-color: #2c4755; 
+    color: white;              
+    padding: 20px;             
+    text-align: center;        
+    font-size: 18px;           
+}
+
+.footer .container span {
+    color: #10cab7;           
+    font-weight: bold;         
+    cursor: pointer;           
+}
