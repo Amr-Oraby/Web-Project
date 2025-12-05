@@ -125,6 +125,31 @@ header .links li a {
     text-align: center;
 }
 
+.features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.features .container .box {
+    text-align: center;
+}
+
+.features .container .box i {
+    color: #10cab7;
+}
+
+.features .container .box p {
+    line-height: 25px;
+    max-width: 300px;
+    margin: auto;
+    color: #777;
+}
+
 .service {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -193,4 +218,34 @@ header .links li a {
     .service .container .serv i {
         margin: auto;
     }
+}
+
+.portfolio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.portfolio .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.portfolio .container .project {
+    background-color: #275b56e6;
+    padding: 10px;
+}
+
+.portfolio .container .project .text {
+    padding: 20px;
+    padding-top: 0;
+}
+
+.portfolio .container .project .text {
+    color: white;
+}
+
+.portfolio .container img {
+    max-width: 100%;
 }
