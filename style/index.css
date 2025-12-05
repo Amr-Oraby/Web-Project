@@ -249,3 +249,44 @@ header .links li a {
 .portfolio .container img {
     max-width: 100%;
 }
+
+.contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #eee;
+}
+
+.contact .text {
+    font-size: 32px;
+            color: #2c3e50; /* Dark blue-grey */
+            font-weight: 800;
+            margin-bottom: 10px;
+}
+
+.email-link {
+            display: block;
+            font-size: 36px;
+            color: #1abc9c; 
+            text-decoration: none;
+            font-weight: 900;
+            margin-bottom: 30px;
+            transition: color 0.3s ease;
+}
+
+
+.social-area {
+            font-size: 16px;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px; 
+}
+
+.social-icons a {
+            color: #2c3e50;
+            font-size: 18px;
+            margin-left: 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+}
