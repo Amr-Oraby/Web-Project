@@ -21,6 +21,7 @@
                 <li><a href="#">Team Members</a></li>
                 <li><a href="#">Skills</a></li>
             </ul>
+            <div class="bars"><i class="fa-solid fa-bars"></i></div>
         </div>
     </header>
     <div class="landing">
@@ -126,25 +127,67 @@
             </div>
         </div>
     </div>
+    <div class="about">
+        <div class="special">
+            <h1>About</h1>
+            <p>Less is more Work.</p>
+        </div>
+        <div class="container">
+            <div class="img-holder"><img src="images/about.jpg"></div>
+            <div class="text">
+                <div class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo neque voluptate
+                    tempora velit cum non, fuga vitae
+                    architecto delectus sed maxime rerum impedit aliquam obcaecati, aut excepturi iusto laudantium!
+                </div>
+                <div class="text2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, sapiente. Velit iure exercitationem
+                    dolores nesciunt
+                    dolore. Eum officiis dolorum hic voluptate quaerat minima, similique inventore esse, alias, sed quo
+                    officia?
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="contact">
         <div class="special">
             <h1>Contact</h1>
             <p>We are born to create</p>
-            <br>
-            <br>
+        </div>
+        <div class="container">
             <h2 class="text">Feel free to drop us a line at:</h2>
-        
-        <a href="mailto:leonagency@mail.com" class="email-link">leonagency@mail.com</a>
 
-        <div class="social-area">
-            <span>Find Us On Social Networks</span>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:leonagency@mail.com" class="email-link">leonagency@mail.com</a>
+
+            <div class="social-area">
+                <span>Find Us On Social Networks</span>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
         </div>
     </div>
+
+    <script>
+        const links = document.querySelector("header .links");
+        const bars = document.querySelector(".bars");
+        links.style.height = "0px";
+        bars.onclick = function () {
+            if (links.style.height == "0px") {
+                links.style.height = "150px";
+            } else {
+                links.style.height = "0px";
+            }
+        };
+        window.onresize = function () {
+            if (window.innerWidth > 600) {
+                links.style.height = "";
+            } else {
+                links.style.height = "0px";
+            }
+        }
+    </script>
     </div>
     <div class="footer">
             <div class="container">
