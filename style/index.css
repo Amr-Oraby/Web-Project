@@ -125,6 +125,31 @@ header .links li a {
     text-align: center;
 }
 
+.features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.features .container .box {
+    text-align: center;
+}
+
+.features .container .box i {
+    color: #10cab7;
+}
+
+.features .container .box p {
+    line-height: 25px;
+    max-width: 300px;
+    margin: auto;
+    color: #777;
+}
+
 .service {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -193,4 +218,75 @@ header .links li a {
     .service .container .serv i {
         margin: auto;
     }
+}
+
+.portfolio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.portfolio .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.portfolio .container .project {
+    background-color: #275b56e6;
+    padding: 10px;
+}
+
+.portfolio .container .project .text {
+    padding: 20px;
+    padding-top: 0;
+}
+
+.portfolio .container .project .text {
+    color: white;
+}
+
+.portfolio .container img {
+    max-width: 100%;
+}
+
+.contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #eee;
+}
+
+.contact .text {
+    font-size: 32px;
+            color: #2c3e50; /* Dark blue-grey */
+            font-weight: 800;
+            margin-bottom: 10px;
+}
+
+.email-link {
+            display: block;
+            font-size: 36px;
+            color: #1abc9c; 
+            text-decoration: none;
+            font-weight: 900;
+            margin-bottom: 30px;
+            transition: color 0.3s ease;
+}
+
+
+.social-area {
+            font-size: 16px;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px; 
+}
+
+.social-icons a {
+            color: #2c3e50;
+            font-size: 18px;
+            margin-left: 10px;
+            text-decoration: none;
+            transition: color 0.3s;
 }
