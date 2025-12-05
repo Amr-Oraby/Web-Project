@@ -21,6 +21,7 @@
                 <li><a href="#">Team Members</a></li>
                 <li><a href="#">Skills</a></li>
             </ul>
+            <div class="bars"><i class="fa-solid fa-bars"></i></div>
         </div>
     </header>
     <div class="landing">
@@ -147,6 +148,46 @@
             </div>
         </div>
     </div>
+    <div class="contact">
+        <div class="special">
+            <h1>Contact</h1>
+            <p>We are born to create</p>
+        </div>
+        <div class="container">
+            <h2 class="text">Feel free to drop us a line at:</h2>
+
+            <a href="mailto:leonagency@mail.com" class="email-link">leonagency@mail.com</a>
+
+            <div class="social-area">
+                <span>Find Us On Social Networks</span>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const links = document.querySelector("header .links");
+        const bars = document.querySelector(".bars");
+        links.style.height = "0px";
+        bars.onclick = function () {
+            if (links.style.height == "0px") {
+                links.style.height = "150px";
+            } else {
+                links.style.height = "0px";
+            }
+        };
+        window.onresize = function () {
+            if (window.innerWidth > 600) {
+                links.style.height = "";
+            } else {
+                links.style.height = "0px";
+            }
+        }
+    </script>
 </body>
 
 </html>
