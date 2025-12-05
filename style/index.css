@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Work Sans", sans-serif;
     padding: 0;
@@ -410,4 +414,19 @@ header .links li a {
     margin-left: 10px;
     text-decoration: none;
     transition: color 0.3s;
+}
+
+
+.footer {
+    background-color: #2c4755;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.footer .container span {
+    color: #10cab7;
+    font-weight: bold;
+    cursor: pointer;
 }
