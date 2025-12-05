@@ -128,6 +128,7 @@ header .links li a {
 .features {
     padding-top: 50px;
     padding-bottom: 50px;
+    background-color: #f6f6f6;
 }
 
 .features .container {
@@ -153,7 +154,6 @@ header .links li a {
 .service {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #eee;
 }
 
 .service .container {
@@ -223,6 +223,7 @@ header .links li a {
 .portfolio {
     padding-top: 50px;
     padding-bottom: 50px;
+    background-color: #f6f6f6;
 }
 
 .portfolio .container {
@@ -233,8 +234,7 @@ header .links li a {
 }
 
 .portfolio .container .project {
-    background-color: #275b56e6;
-    padding: 10px;
+    background-color: white;
 }
 
 .portfolio .container .project .text {
@@ -242,10 +242,89 @@ header .links li a {
     padding-top: 0;
 }
 
-.portfolio .container .project .text {
-    color: white;
+.portfolio .container .project .text p {
+    color: #777;
 }
 
 .portfolio .container img {
     max-width: 100%;
+}
+
+.about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about .container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about .img-holder {
+    position: relative;
+}
+
+.about .img-holder::before {
+    content: "";
+    background-color: #c33939;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: -30px;
+    bottom: -30px;
+    z-index: -1;
+}
+
+.about .img-holder::after {
+    content: "";
+    background-color: #10cab7;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    z-index: -1;
+}
+
+.about .img-holder img {
+    max-width: 100%;
+    width: 250px;
+}
+
+.about .text {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px
+}
+
+.about .text2 {
+    border-top: 3px solid #10cab7;
+    padding-top: 20px;
+    color: #777;
+}
+
+.about .text>div {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+@media (max-width:992px) {
+    .about .container {
+        flex-direction: column;
+        gap: 50px
+    }
+
+    .about .img-holder::before,
+    .about .img-holder::after {
+        display: none;
+    }
+
+    .about .text>div {
+        text-align: center;
+        max-width: 700px;
+    }
 }
