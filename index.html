@@ -25,7 +25,11 @@
     </header>
     <div class="landing">
         <div class=" text">
-            <h1>Hi There, This is our Project Learning HTML CSS & JS</h1>
+            <h1>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                Building Something Meaningful
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+            </h1>
         </div>
     </div>
     <div class="features">
@@ -167,6 +171,23 @@
             </div>
         </div>
     </div>
+    <div class="discount">
+        <div class="special">
+            <h1>Discount</h1>
+            <p>Up to 50%</p>
+        </div>
+        <div class="container">
+            <form>
+                <input class="userName" type="text" placeholder="Your Name">
+                <span class="msg1">User name must be more than 3 characters</span>
+                <input class="userEmail" type="email" placeholder="Your Email" required>
+                <input class="userNumber" type="text" placeholder="Your Phone">
+                <span class="msg2">Phone number must be more than 11 characters</span>
+                <textarea class="input" placeholder="Tell Us About Your Needs" rows="6"></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
     <div class="footer">
         <div class="container">
             &copy; 2021
@@ -175,25 +196,7 @@
         </div>
     </div>
 
-    <script>
-        const links = document.querySelector("header .links");
-        const bars = document.querySelector(".bars");
-        links.style.height = "0px";
-        bars.onclick = function () {
-            if (links.style.height == "0px") {
-                links.style.height = "150px";
-            } else {
-                links.style.height = "0px";
-            }
-        };
-        window.onresize = function () {
-            if (window.innerWidth > 600) {
-                links.style.height = "";
-            } else {
-                links.style.height = "0px";
-            }
-        }
-    </script>
+    <script src="index.js"></script>
 
     <!-- done  -->
 
