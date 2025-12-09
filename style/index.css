@@ -305,6 +305,29 @@ header .links li a {
 
 .portfolio .container .project {
     background-color: white;
+    box-shadow: 1px 1px 10px 3px #ccc;
+    transition: all .3s;
+    position: relative;
+}
+
+.portfolio .container .project::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 5px;
+    background-color: #c33939;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    transition: all .3s;
+}
+
+.portfolio .container .project:hover::after {
+    width: 100%;
+}
+
+.portfolio .container .project:hover {
+    transform: translateY(-10px);
 }
 
 .portfolio .container .project .text {
@@ -334,7 +357,9 @@ header .links li a {
 
 .about .img-holder {
     position: relative;
+    animation: up-down 2s infinite;
 }
+
 
 .about .img-holder::before {
     content: "";
@@ -386,6 +411,10 @@ header .links li a {
     .about .container {
         flex-direction: column;
         gap: 50px
+    }
+
+    .about .img-holder {
+        animation: none;
     }
 
     .about .img-holder::before,
@@ -470,7 +499,7 @@ header .links li a {
 .discount {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image: linear-gradient(to left, #c33939, #10cab7);
+    /* background-image: linear-gradient(to left, #c33939, #10cab7); */
 }
 
 .discount .container form {
@@ -487,6 +516,7 @@ header .links li a {
     width: 95%;
     padding: 15px;
     border: none;
+    border-bottom: 1px solid #ddd;
     outline: none;
     background-color: #f9f9f9;
     resize: none;
@@ -531,5 +561,18 @@ header .links li a {
 
     to {
         transform: rotate(360deg);
+    }
+}
+
+
+@keyframes up-down {
+
+    0%,
+    100% {
+        top: 0
+    }
+
+    50% {
+        top: -40px
     }
 }
